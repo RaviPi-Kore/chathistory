@@ -13,29 +13,26 @@ var timezone      = require("moment-timezone");
 var environment   = "bots.kore.ai";
 
 // Organisation ID
-var orgId         = "o-a21a627c-13e8-5bd8-bc97-4d068ddde24c";
+var orgId         = "";
 
 // Authorization token
-var token         = "RMFcIlJYGVM6l0zR4BPmamrul3BKliPeVNJoKWBCt7xlEuvzRx4yoSTIQJLpY_CE";
+var token         = "";
 
 // From date in GMT
-var fromDate      = "2018-11-01T00:00:00.000Z";
+var fromDate      = "";
 
 //To date in GMT
-var toDate        = "2018-11-03T23:59:00.000Z";
+var toDate        = "";
 
 // Stream Ids seperated by comma.
-var body          = '{"streamIds":["st-710e7d3d-f795-569f-9055-6f158ca1cf28"]}';
+var body          = '{"streamIds":[""]}'; //Add BotId
 
 // Admin user ID
-var adminUserId   = "u-32234de9-5b5a-5554-a3e3-ba8d51862ff9";
+var adminUserId   = "";
 
 
-/*var environment = "bots.kore.ai";
- var orgId       = "o-f92008eb-b1c3-5e70-a24e-afdab80f8baa";
- var token       = "qBf2nzmu4HEieBGj-r-ELkJMvuLG1JPB_jCpB5rNu5-FsPjYWfz1KznvcDDduQl5";//"M1j4pk8RV3Lzy-DkY7NULWaKTES-iC3hHLrP2erXy41bdXAh0JRsvRDJ39fxeMX8";
- var fromDate    = "2017-12-04T15:30:00.000Z";
- var toDate      = "2017-12-04T23:59:00.000Z";*/
+var accountId ="";
+
 
 var head = {
     accept: 'application/json',
@@ -43,7 +40,7 @@ var head = {
     authorization: 'bearer '+token,
     'requester-type': 'admin',
     origin: 'https://bots.kore.ai',
-    accountid:'5a154e8b1e8f43011ac90ed8'
+    accountid:accountId
 };
 
 app.use(bodyParser.json());
